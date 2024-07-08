@@ -7,13 +7,9 @@ summaries.forEach((summary) => {
 function toggleSummaryIcon(event) {
   const summaryIcon = event.currentTarget.querySelector(".summary-icon");
 
-  if (
-    summaryIcon.style.backgroundImage ===
-    'url("../assets/images/icon-minus.svg")'
-  ) {
-    summaryIcon.style.backgroundImage = 'url("../assets/images/icon-plus.svg")';
+  if (summaryIcon.style.backgroundImage === 'url("../images/icon-minus.svg")') {
+    summaryIcon.style.backgroundImage = 'url("../images/icon-plus.svg")';
   } else {
-    summaryIcon.style.backgroundImage =
-      'url("../assets/images/icon-minus.svg")';
+    summaryIcon.style.backgroundImage = 'url("../images/icon-minus.svg")';
   }
 }
