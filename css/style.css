@@ -134,21 +134,18 @@ details summary p {
 .summary-icon {
   width: 30px;
   height: 30px;
-  background-image: url("../images/icon-plus.svg");
   background-repeat: no-repeat;
   display: inline-block;
   vertical-align: middle;
   padding-inline-end: 25px;
 }
 
-.summary-icon-minus {
-  width: 30px;
-  height: 30px;
+.summary-icon.plus {
+  background-image: url("../images/icon-plus.svg");
+}
+
+.summary-icon.minus {
   background-image: url("../images/icon-minus.svg");
-  background-repeat: no-repeat;
-  display: inline-block;
-  vertical-align: middle;
-  padding-inline-end: 25px;
 }
 
 .content {

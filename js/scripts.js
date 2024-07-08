@@ -7,11 +7,6 @@ summaries.forEach((summary) => {
 function toggleSummaryIcon(event) {
   const summaryIcon = event.currentTarget.querySelector(".summary-icon");
 
-  if (summaryIcon.classList === "summary-icon-minus") {
-    summaryIcon.classList.remove("summary-icon-minus");
-    summaryIcon.classList.add("summary-icon");
-  } else {
-    summaryIcon.classList.remove("summary-icon");
-    summaryIcon.classList.add("summary-icon-minus");
-  }
+  summaryIcon.classList.toggle("plus");
+  summaryIcon.classList.toggle("minus");
 }
