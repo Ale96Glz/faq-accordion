@@ -7,9 +7,11 @@ summaries.forEach((summary) => {
 function toggleSummaryIcon(event) {
   const summaryIcon = event.currentTarget.querySelector(".summary-icon");
 
-  if (summaryIcon.style.backgroundImage === 'url("../images/icon-minus.svg")') {
-    summaryIcon.style.backgroundImage = 'url("../images/icon-plus.svg")';
+  if (summaryIcon.classList === "summary-icon-minus") {
+    summaryIcon.classList.remove("summary-icon-minus");
+    summaryIcon.classList.add("summary-icon");
   } else {
-    summaryIcon.style.backgroundImage = 'url("../images/icon-minus.svg")';
+    summaryIcon.classList.remove("summary-icon");
+    summaryIcon.classList.add("summary-icon-minus");
   }
 }
